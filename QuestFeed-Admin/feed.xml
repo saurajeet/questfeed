@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="0.92">
+<channel>
+	<title>QuestFeed</title>
+	<link>http://localhost</link>
+	<language>en-US</language><item>
+<title>rohit</title>
+<description>i m gr8</description>
+<author>admin@admin.com (admin)</author>
+<link>IT</link>
+<guid>1</guid>
+<pubDate>Tue, 19 Apr 11 15:26:53 +0530</pubDate>
+<source url='ITLINK'>it</source>
+</item>
+<item>
+<title>Google Codejam</title>
+<description><h1>Put on your coding gears for may 6</h1><br>
+BOL :)</description>
+<author>admin@admin.com (admin)</author>
+<link>http://code.google.com/codejam</link>
+<guid>5</guid>
+<pubDate>Tue, 19 Apr 11 16:28:24 +0530</pubDate>
+<source url='tnp.bitmesra.ac.in'>TNP BIT MESRA</source>
+</item>
+<item>
+<title>jj</title>
+<description>jj</description>
+<author>admin@admin.com (admin)</author>
+<link>jj</link>
+<guid>6</guid>
+<pubDate>Tue, 19 Apr 11 16:31:10 +0530</pubDate>
+<source url='jj'>jj</source>
+</item>
+<item>
+<title>ss</title>
+<description>ss</description>
+<author>admin@admin.com (admin)</author>
+<link>ss</link>
+<guid>7</guid>
+<pubDate>Sun, 24 Apr 11 11:56:26 +0530</pubDate>
+<source url='ss'>ss</source>
+</item>
+</channel>
+ </rss>

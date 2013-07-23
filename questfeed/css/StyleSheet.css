@@ -1,0 +1,60 @@
+﻿body 
+{   font-family: Corbel;
+}
+
+#content
+{   width: 1024px;
+    min-height: 600px;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+}
+
+#footer
+{   color: #EEEEEE;
+    font-size: x-small;
+    font-family: Segoe UI;
+} 
+
+#left_pane
+{   float: left;
+    border-radius: 20px;
+    width: 25%;
+    min-height: 595px;
+    padding-left: 10px;
+    //border: thin red solid;
+}
+
+#right_pane
+{   float:left;
+    width: 74%;
+    min-height: 595px;
+    border-radius: 20px;
+    //border: thin blue solid;
+}
+
+#qflogo
+{   height: 150px;
+    text-align: center;
+    //border: thin green solid;
+}
+
+#spacing
+{   height: 180px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+#wotf
+{   height: 150px;
+}
+
+#boozz
+{   min-height: 420px;
+    margin: 10px;
+    //border-left: gray thin solid;
+}
+
+ul li a
+{   font-family: Segoe UI;
+    
+}

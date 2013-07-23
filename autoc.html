@@ -1,0 +1,62 @@
+<!--AUTOCOMPLETE DEMONSTATION BY SAURAJEET DUTTA
+		Birla Institute Of Technology, Mesra, Ranchi
+		Feb 28, 2011
+		
+	This code is only made to test the autocompleting procedure from one word "saurajeet"
+	this code has to be modified for a list of word...
+-->
+<script type="text/javascript">
+document.onkeyup = KeyCheck;       
+function KeyCheck(e)
+{
+   var KeyID = (window.event) ? event.keyCode : e.keyCode;
+   switch(KeyID)
+   {
+      case 13:	if (document.getElementById("suggest").innerHTML == "&lt;no suggest&gt;")
+					break;
+				else
+				{	document.getElementById("typepad").value = document.getElementById("suggest").innerHTML;
+					return;
+				}	
+   }
+}
+
+function suggest(str)
+{	document.getElementById("ff").innerHTML = str.length;
+	var suggest = "saurajeet";								//populate an array of the words that are to be seached..
+															//and then accordingly change the function matched...
+	if (matched (suggest, str))
+	{	document.getElementById("suggest").innerHTML = suggest;
+	}
+	else
+	{	document.getElementById("suggest").innerHTML = "&lt;no suggest&gt;";
+	}
+	return;
+}
+
+function matched (a, b)			//you might want to use better algorithm for string searching and populate the results..
+{	if (b.length < 4)
+	{	return false;
+	}
+	for (var i = 0; i < b.length; i++)
+	{	if (a[i] != b[i])
+			return false;
+	}
+	return true;
+}
+			
+</script>
+<input type="text" name="MyText" id='typepad' onkeyup="suggest(this.value)" onchange="" />
+<strong id="ff">0</strong>
+<strong>, Suggestive Text </strong> <label id="suggest">No Suggestion</label>
+<pre>
+	1. Enter the string "saur" into the textbox
+	2. Once the suggestive Text changes Appears in
+	3. press enter to complete the string
+	
+	Note: This code is only made with to work with one word change the program accordingly for a list of words..
+		  
+	HOPE I HAVE FULFILLED SOME OF YOUR EXPECTATIONS
+</pre>
+
+

@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/StyleSheet.css" type="text/css" rel="Stylesheet" />
+    <link type="text/css" href="css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/screen.css" />
+	<link rel="stylesheet" type="text/css" href="css/dropdown.css" />
+
+	<script type="text/javascript" src="js/helpers.js"></script>
+	<script type="text/javascript" src="js/date.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
+	<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+
+		    // Accordion
+		    $("#accordion").accordion({ header: "h3" });
+
+		    // Tabs
+		    $('#tabs').tabs();
+
+
+		    // Dialog			
+		    $('#dialog').dialog({
+		        autoOpen: false,
+		        width: 600,
+		        buttons: {
+		            "Ok": function () {
+		                $(this).dialog("close");
+		            },
+		            "Cancel": function () {
+		                $(this).dialog("close");
+		            }
+		        }
+		    });
+
+		    // Dialog Link
+		    $('#dialog_link').click(function () {
+		        $('#dialog').dialog('open');
+		        return false;
+		    });
+
+		    // Datepicker
+		    $('#datepicker').datepicker({
+		        inline: true
+		    });
+
+		    // Slider
+		    $('#slider').slider({
+		        range: true,
+		        values: [17, 67]
+		    });
+
+		    // Progressbar
+		    $("#progressbar").progressbar({
+		        value: 20
+		    });
+
+		    //hover states on the static widgets
+		    $('#dialog_link, ul#icons li').hover(
+				function () { $(this).addClass('ui-state-hover'); },
+				function () { $(this).removeClass('ui-state-hover'); }
+			);
+
+		});
+	</script>
+</head>
+<body background="rc/back.jpg">
+    <center> 
+        <div id="content">
+            <div id="left_pane">
+                <div id="spacing">
+                    <form action="" style="width: 100px; background: none; margin: 0; padding: 0;">
+                        <fieldset style="margin: 0;">
+                            <legend>Login</legend>
+                            Username <input type="text" name="username" /><br />
+                            Passphrase <input type="password" name="passwords" /><br />
+                        <div><button type="submit">Log in</button></div>
+                        </fieldset>
+                        
+                    </form>
+                </div>
+                <div id="wotf">
+                    <span style="font-family: Segoe UI; font-size: large;">Word of the day</span><br /><br />
+                    <span>"Friend in party is a friend indeed."</span>
+                </div>                
+                <br />
+                <div id="datepicker"></div>
+            </div>
+            <div id="right_pane">
+                <div id="qflogo">
+                    <img src="rc/qflogo.png" alt="Questfeed"  height="150px"/>
+                </div> 
+                <div id="boozz">
+                    <div id="tabs"> 
+			            <ul> 
+				            <li><a href="#tabs-1">Subscribe</a></li>
+                            <li><a href="#tabs-2">Channels</a></li> 
+				            <li><a href="#tabs-3">How it Works</a></li> 
+                            <li><a href="#tabs-4">Social</a></li> 
+				            <li><a href="#tabs-5">About Us</a></li> 
+			            </ul> 
+			            <div id="tabs-1">
+                            Hello user, you can select the channel that you want to get subscribed to, just click on the select box, enter you email ID and click on go.<br />
+                            <form name="subscribe" action="" method="post" style="text-align:right">
+                                <fieldset>
+                                <legend>Enter Your Details</legend>
+                                Name <input type="text" name="uname" id="uname" /><br />
+                                Email <input type="text" name="uemail" id="uemail" /><br />
+                                Date Of Birth
+                                <span class="date">
+				                    <fieldset>
+					                    <div>
+						                    <label for="day">Day</label>
+						                    <select id="day" name="dob_day">
+							                    <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+						                    </select>
+					                    </div>
+					                    <div>
+						                    <label for="month">Month</label>
+						                    <select id="month" name="dob_month">
+							                    <option value="1">January</option><option value="2">February</option><option value="3">March</option><option value="4">April</option><option value="5">May</option><option value="6">June</option><option value="7">July</option><option value="8">August</option><option value="9">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option>
+						                    </select>
+					                    </div>
+					                    <div>
+						                    <label for="year">Year</label>
+						                    <select id="year" name="bod_year">
+							                    <option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option>
+						                    </select>
+					                    </div>
+                                    </fieldset>
+                                </span><br />
+
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select><br />
+                                <div><button type="submit">Subscribe</button></div>
+                                </fieldset>
+                            </form>
+                        </div> 
+			            <div id="tabs-2">HOW IT WORKS SPACE.</div> 
+			            <div id="tabs-3">Working goes here</div>
+                        <div id="tabs-4">Follow Us on facebook</div> 
+                        <div id="tabs-5">About us</div> 
+		            </div> 
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            Questfeed Prototype designed for IBM TWC 2011 [By Saurajeet Dutta, Shobhit Singh, Swati Agarwal][TEAM :: Glitz]
+        </div>
+    </center>
+</body>
+</html>

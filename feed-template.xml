@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version='2.0'>
+	<channel >
+		<title>QuestFeed</title>
+		<category>Department</category>
+		<description>Feed Server Starting</description>
+		<link>http://localhost/</link>
+		<language>en-us</language>
+	
+		<item>
+			<title>First Feed</title>
+			<description>&#60;h1&#62;FEED DESCRIPTION&#60;/h1&#62;</description>
+			<author>someone@somewhre.com (feeder)</author>
+			<link>http://192.168.117.26</link>
+			<guid>http://192.168.117.26</guid>
+			<pubDate>Sun, 20 Feb 2011 08:00:00 +0530</pubDate>
+			<source url="http://www.maitraee.org">if any</source>
+		</item>
+		</channel>
+</rss>
